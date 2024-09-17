@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+.pages{
+  display:none;
+}
+
+:target{
+  display:block;
+}
+
+body{
+  background-color:#222831;
+}
+
+.header-container{
+  display:grid;
+  place-items:center;
+  padding:5%;
+  margin:auto;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+
+.header-container a{
+  color:#ffffff;
+  text-decoration: none;
+}

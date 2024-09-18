@@ -1,7 +1,8 @@
-export default function Channels(){
+export default function Channels(props){
     return(
         <>
-            <h2>All the channels</h2>
+            <h2>{props.channel}</h2>
+            
         </>
     )
 }

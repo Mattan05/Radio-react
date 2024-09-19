@@ -1,7 +1,7 @@
-export default function Channels(props){
+export default function Channels({channel}){
     return(
         <>
-            <h2>{props.channel}</h2>
+          {  <h2>{channel.name}</h2>}
             
         </>
     )

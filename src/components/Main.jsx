@@ -9,7 +9,6 @@ export default function Main(){
         getChannels();
       }, [])
     
-    
     let [channels, setChannels] = useState([]);
     let [favorites, setFavorites] = useState([]);
     let [isHome, setIshome] = useState([false]);
@@ -31,13 +30,16 @@ export default function Main(){
             <Home></Home>
             <div className="pages" id="channels">
                 {channels.map(c=>(
-                      <Channels channel={c} key={c.id}></Channels>
+                      <Channels channel={c} key={c.id} setFavorites={setFavorites}></Channels>
                 ))}
               
             </div>
 
             <div className="pages" id="favorites">
-                <Favorites></Favorites>
+                {favorites.map(f=>(
+                    <Favorites channel={f} key={"f"+f.id}></Favorites>
+                ))}
+                
             </div>
         </>
     )

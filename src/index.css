@@ -8,6 +8,32 @@
   display:none;
 }
 
+.channel-container img{
+ width: 200px;
+}
+
+.channel-container{
+  display:grid;
+  place-items:center;
+  padding:5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.channel-container p{
+  text-align:center;
+  max-width: 20vw;
+}
+
+.channel-container button {
+  font-size: 50px;
+  background-color: black;
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
 :target{
   display:block;
 }
@@ -17,13 +43,16 @@ body{
 }
 
 .header-container{
-  display:grid;
+  display:flex;
   place-items:center;
-  padding:5%;
+  padding:3%;
   margin:auto;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- 
+}
+
+.header-container nav{
+  font-size:2rem;
+  margin-left:5%;
 }
 
 .header-container a{
@@ -32,9 +61,25 @@ body{
 }
 
 .footer-container{
+  display:grid;
+  place-items:center;
   width:100%;
   text-align:center;
-  margin:auto;
   height:20vh;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.footer-container ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items horizontally */
+  gap: 2rem; /* Space between items */
+}
+
+
+/* Footer links */
+.footer-container a {
+  color: #fff; /* White link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Font size */
 }
